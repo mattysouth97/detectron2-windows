@@ -1,3 +1,18 @@
+# Fork from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2)
+
+This repository can be used to install Detectron2 on Windows 10.
+
+### Requirements
+Python 3.6 or higher<br>
+PyTorch 1.4 or higher<br>
+CUDA 9.2 or higher<br>
+Visual Studio 2013-2019
+
+
+Follow this tutorial for installation:<br>
+https://medium.com/@dgmaxime/how-to-easily-install-detectron2-on-windows-10-39186139101c
+<br>
+---
 <img src=".github/Detectron2-Logo-Horz.svg" width="300" >
 
 Detectron2 is Facebook AI Research's next generation software system
