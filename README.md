@@ -3,15 +3,14 @@
 This repository can be used to install Detectron2 on Windows 10.
 
 ### Requirements
-Python 3.6 or higher<br>
-PyTorch 1.4 or higher<br>
-CUDA 9.2 or higher<br>
-Visual Studio 2013-2019
-
+* Python 3.6 or higher
+* PyTorch 1.4 or higher
+* CUDA 9.2 or higher
+* Visual Studio 2013-2019
 
 Follow this tutorial for installation:<br>
 https://medium.com/@dgmaxime/how-to-easily-install-detectron2-on-windows-10-39186139101c
-<br>
+
 ---
 <img src=".github/Detectron2-Logo-Horz.svg" width="300" >
 
