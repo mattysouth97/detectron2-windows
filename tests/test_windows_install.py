@@ -13,10 +13,11 @@ res = requests.get("https://live.staticflickr.com/700/33224654191_fdaee2e3f1_c_d
 image = np.asarray(bytearray(res.content), dtype="uint8")
 image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
+config_file = 'COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml'
 cfg = get_cfg()
-cfg.merge_from_file(model_zoo.get_config_file('COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml'))
+cfg.merge_from_file(model_zoo.get_config_file(config_file))
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.75 # Threshold
-cfg.MODEL.WEIGHTS = "detectron2://COCO-Detection/faster_rcnn_R_101_FPN_3x/137851257/model_final_f6e8b1.pkl"
+cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(config_file)
 cfg.MODEL.DEVICE = "cuda" # cpu or cuda
 
 # Create predictor
